@@ -1,2 +1,54 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
+
+html{
+
+  position: relative;
+  min-height: 100%;
+}
+
+main{
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer ul.mobile{
+  position: absolute;
+  margin-left: 0;
+}
+
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop {
+      text-decoration: #9CC5A1;
+      display: none;
+  }
+
+  .mobile {
+      text-decoration: #9CC5A1;
+      display: block;
+  }
+}
+
+footer ul {
+  list-style-type:none; 
+  text-align:center;
+}
+
+p {
+  font-family: serif;
+  font-size: 18px;
+}

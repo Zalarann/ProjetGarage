@@ -11976,4 +11976,54 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul.mobile {
+  position: absolute;
+  margin-left: 0;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop {
+    -webkit-text-decoration: #9CC5A1;
+            text-decoration: #9CC5A1;
+    display: none;
+  }
+  .mobile {
+    -webkit-text-decoration: #9CC5A1;
+            text-decoration: #9CC5A1;
+    display: block;
+  }
+}
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

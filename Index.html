@@ -10,21 +10,33 @@
   <title>Document</title>
 </head>
 <body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous d'ajuster le chemin du fichier CSS si nécessaire -->
+    <title>Garage V Parrot</title>
+  </head>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Garage V Parrot</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">Accueil</a>
+                <a class="nav-link active" aria-current="page" href="/">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nos voitures</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Services
+                  Services
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Réparation</a></li>
@@ -33,13 +45,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nos véhicules d'occasions</a>
+                <a class="nav-link" href="#">Vos Avis</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Nous contacter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vos Avis</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Connexion/Deconnexion</a>
@@ -55,72 +64,26 @@
     </main>
     
     <footer class="bg-dark text-white text-center footer">
-      <div class="row">
-      <div class="col-8">
-        <h3 class="text-primary" style="text-align:center">Nos horaires</h3>
-        <ul class="desktop text-secondary">
-        <li>
-          lun : 08-45 - 12:00, 14h00 - 18h00
-        </li>
-        <li>
-          mar : 08-45 - 12:00, 14h00 - 18h00
-        </li>
-        <li>
-          mer : 08-45 - 12:00, 14h00 - 18h00
-        </li>
-        <li>
-          jeu : 08-45 - 12:00, 14h00 - 18h00
-        </li>
-        <li>
-          ven : 08-45 - 12:00, 14h00 - 18h00
-        </li>
-        <li>
-          sam : 08-45 - 12:00, fermé
-        </li>
-        <li>
-          dim : fermé
-        </li>
-      </ul>
-      <ul class="mobile text-secondary">
-        <Li>En semaine <br>Fermeture 12h-14h</Li>
-        <li>
-          lun : 08-45 - 18:00
-        </li>
-        <li>
-          mar : 08-45 - 18:00
-        </li>
-        <li>
-          mer : 08-45 - 18:00
-        </li>
-        <li>
-          jeu : 08-45 - 18:00
-        </li>
-        <li>
-          ven : 08-45 - 18:00
-        </li>
-        <li>
-          sam : 08-45 - 18:00
-        </li>
-        <li>
-          dim : fermé
-        </li>
-      </ul>
+      <div class="footer-top">
+      <div class="footer-col">
+        <h3>Nos horaires</h3>
+        <p>
+          lun : 08-45 - 12:00, 14h00 - 18h00 <br>
+          mar : 08-45 - 12:00, 14h00 - 18h00 <br>
+          mer : 08-45 - 12:00, 14h00 - 18h00 <br>
+          jeu : 08-45 - 12:00, 14h00 - 18h00 <br>
+          ven : 08-45 - 12:00, 14h00 - 18h00 <br>
+          sam : 08-45 - 12:00, fermé <br>
+          dim : fermé 
+        </p>
       </div>
-      <div class="desktop col-4">
-        <h3 class="text-primary">Nos Coordonnées</h3>
-        <ul class="text-secondary">
-        <li>Garageparrot@gmail.com</li>
-        <li>4 rue du capitole 31000 Toulouse</li>
-        <li>05-55-55-55-55</li>
-        </ul>
-      </div>
-      <div class="mobile col-4">
-        <h3 class="text-primary">Coordonnées</h3>
-        <ul class="text-secondary">
-        <li>Garageparrot <br>@gmail.com</li>
-        <li>4 rue du capitole <br>31000 Toulouse</li>
-        <li>05-55-55-55-55</li>
-        </ul>
+      <div class="footer-col">
+        <h3>Nos Coordonnées</h3>
+        <p>
+          Garageparrot@gmail.com <br>
+          4 rue du capitole 31000 Toulouse <br>
+          05-55-55-55-55 <br>
+        </p>
       </div>
     </div>
     </footer>

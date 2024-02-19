@@ -95,6 +95,11 @@ function showAndHideElementsForRoles(){
                   element.classList.add("d-none");
               }
               break;
+          case 'admin employee':
+              if (!userConnected && role !== 'admin' && role !== 'employee') {
+                  element.classList.add('d-none');
+              }
+              break;
       }
   })
 }

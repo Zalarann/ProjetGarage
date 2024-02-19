@@ -12178,4 +12178,36 @@ filter .button {
 }
 .voitures .btn-primary {
   background-color: aquamarine;
+}
+
+form {
+  max-width: 400px;
+  margin: 8px auto;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #45a049;
 }/*# sourceMappingURL=main.css.map */

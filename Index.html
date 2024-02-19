@@ -42,8 +42,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/Contact">Nous contacter</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Connexion">Connexion/Deconnexion</a>
+              <li class="nav-item" data -show="disconnect">
+                <a class="nav-link" href="/Connexion">Connexion</a>
+              </li>
+              <li class="nav-item" data-show="connect">
+                <button class="nav-link" id="btn-disconnected">Deconnexion</a>
               </li>
             </ul>
           </div>
@@ -81,6 +84,7 @@
     </footer>
 
     <script type="module" src="Router/router.js"></script>
+    <script src="js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -6,19 +6,22 @@
   <!-- PENSER A CHANGER L'ACTION !!!!-->
   <div class="container mt-5">
     <form class="forms" action="traitement.php" method="post">
-                <label for="name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <label for="lastname" class="form-label">Nom:</label>
+                <input type="text" class="form-control" id="LastNameInput" name="lastname">
+
+                <label for="firstname" class="form-label">prénom:</label>
+                <input type="text" class="form-control" id="FirstNameInput" name="firstname">
 
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="EmailInput" name="email">
                 
                 <label for="subject" class="form-label">Sujet:</label>
-                <input type="text" class="form-control" id="subject" value="" name="subject">
+                <input type="text" class="form-control" id="SubjectInput" value="" name="subject" placeholder="Annonce ou Rendez-vous">
                 
                 <label for="message" class="form-label">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                <textarea class="form-control" id="MessageArea" name="message" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-primary" id="btnValidation">Envoyer</button>
         </form>
     </div>
 </div>

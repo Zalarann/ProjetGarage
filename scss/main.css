@@ -12176,7 +12176,7 @@ filter .button {
   flex-direction: column;
   padding: 0px;
 }
-.voitures .btn-primary {
+.voitures .type-1 {
   background-color: aquamarine;
 }
 .voitures .container_form {

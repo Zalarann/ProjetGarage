@@ -72,26 +72,30 @@
         <input type="number" class="form-control" id="maxKm" placeholder="" name="maxKm">
       </div>
     </div>
-    <div class="row mt-4 justify-content-center">
+    <div class="row mt-4 justify-content-center text-center">
       <div class="col-md-12">
-      <button class="btn btn-primary">Appliquer les filtres</button>
-      <button class="btn btn-primary ms-2">Réinitialiser les filtres</button>
+      <button class="btn btn-primary type-1">Appliquer les filtres</button>
+      <button class="btn btn-primary type-1 ms-2">Réinitialiser les filtres</button>
       </div>
     </div>
   </div>
 </div>
+<div class="text-center">
+  <button class="btn btn-primary type-1 btn-lg fw-bold">Ajouter une annonce</button>
+</div>
 <div class="voitures">
 <div class="container">
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
-      <h2 class="card-title">Audi A1</h2>
-      <img src="../images/Audi_A1.jpg" alt="Audi_A1" width="1280" height="800" decoding="async" data-nimg="1" class="card-img-top" style="color: transparent;">
-      <p class=accroche>L'audi dont vous avez toujours rêvé</p>
-      <div class="card-body d-flex justify-content-between align-items-center m-4">
-      <p class="mb-0 text-white">12 000 €</p>
-      <p class="mb-0 text-white">166,650 km</p>
-      <p class="mb-0 text-white">2012</p>
-      <button class="btn btn-primary">Prendre rendez-vous</button>
-      </div>
+    <button class="btn btn-primary action-image-button" data-bs-toggle="modal" data-bs-target="#modifyAudiModal"><i class="bi bi-magic"></i></button>
+    <h2 class="card-title">Audi A1</h2>
+    <img src="../images/Audi_A1.jpg" alt="Audi_A1" width="1280" height="800" decoding="async" data-nimg="1" class="card-img-top" style="color: transparent;">
+    <p class=accroche>L'audi dont vous avez toujours rêvé</p>
+    <div class="card-body d-flex justify-content-between align-items-center m-4">
+    <p class="mb-0 text-white">12 000 €</p>
+    <p class="mb-0 text-white">166,650 km</p>
+    <p class="mb-0 text-white">2012</p>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
+  </div>
   </div>
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
     <h2 class="card-title">Mazda 3</h2>
@@ -101,7 +105,7 @@
     <p class="mb-0 text-white">19 900 €</p>
     <p class="mb-0 text-white">38 800 km</p>
     <p class="mb-0 text-white">2019</p>
-    <button class="btn btn-primary">Prendre rendez-vous</button>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
     </div>
   </div>
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
@@ -112,7 +116,7 @@
     <p class="mb-0 text-white">39 990€</p>
     <p class="mb-0 text-white">56 730 km</p>
     <p class="mb-0 text-white">2015</p>
-    <button class="btn btn-primary">Prendre rendez-vous</button>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
     </div>
   </div>
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
@@ -123,7 +127,7 @@
     <p class="mb-0 text-white">14 000€</p>
     <p class="mb-0 text-white">90 000 km</p>
     <p class="mb-0 text-white">1968</p>
-    <button class="btn btn-primary">Prendre rendez-vous</button>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
     </div>
   </div>
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
@@ -134,7 +138,7 @@
     <p class="mb-0 text-white">9 500€</p>
     <p class="mb-0 text-white">85 000 km</p>
     <p class="mb-0 text-white">2015</p>
-    <button class="btn btn-primary">Prendre rendez-vous</button>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
     </div>
   </div>
   <div class="card w-100 bg-primary shadow-lg cursor-pointer">
@@ -145,10 +149,33 @@
     <p class="mb-0 text-white">6 800€</p>
     <p class="mb-0 text-white">94 000 km</p>
     <p class="mb-0 text-white">2010</p>
-    <button class="btn btn-primary">Prendre rendez-vous</button>
+    <button class="btn btn-primary type-1">Prendre Contact</button>
     </div>
   </div>
 </div>
 </div>
 
  
+<div class="modal fade" id="modifyAudiModal" tabindex="-1" aria-labelledby="modifyAudiModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modifyAudiModalLabel">Modifier les détails de l'Audi A1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add form fields for modification here (price, year, km, title, image) -->
+        <label for="modifiedPrice">Nouveau Prix</label>
+        <input type="number" id="modifiedPrice" class="form-control" placeholder="Nouveau Prix">
+        <!-- Add other fields as needed -->
+
+        <label for="modifiedImage">Nouvelle Image URL</label>
+        <input type="text" id="modifiedImage" class="form-control" placeholder="Nouvelle Image URL">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary type-1" id="saveChangesButton">Enregistrer les modifications</button>
+      </div>
+    </div>
+  </div>
+</div>

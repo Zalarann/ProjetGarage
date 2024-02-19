@@ -1,6 +1,7 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
+
 html{
 
   position: relative;
@@ -144,4 +145,73 @@ footer h3 {
   footer {
     padding: 30px;
   }
+}
+
+filter {
+  .label{
+    width: 66%;
+  }
+  .button{
+    width: 33%;
+  }
+}
+.voitures {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    margin-top: 10px;
+  }
+
+  .card p {
+    margin: 10px 0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+  }
+  @media (min-width: 768px) {
+    .card {
+      flex: 0 0 calc(33.33% - 40px); /* Adjust the width as needed */
+    }
+  }
+  .card .accroche {
+    font-size: 20px; /* ou la taille que vous préférez */
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  @media only screen and (max-width: 768px) {
+    .card .accroche {
+      font-size: 16px;
+    }
+  }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .btn-primary {
+    background-color: aquamarine;
+}
+  
 }

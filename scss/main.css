@@ -12120,4 +12120,62 @@ footer h3, footer .h3 {
   footer {
     padding: 30px;
   }
+}
+filter .label {
+  width: 66%;
+}
+filter .button {
+  width: 33%;
+}
+
+.voitures .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.voitures .card {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+.voitures .card img {
+  width: 100%;
+  height: auto;
+}
+.voitures .card-title {
+  margin-top: 10px;
+}
+.voitures .card p {
+  margin: 10px 0;
+}
+.voitures .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.voitures .btn-primary {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .voitures .card {
+    flex: 0 0 calc(33.33% - 40px); /* Adjust the width as needed */
+  }
+}
+.voitures .card .accroche {
+  font-size: 20px; /* ou la taille que vous préférez */
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .voitures .card .accroche {
+    font-size: 16px;
+  }
+}
+.voitures .card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.voitures .btn-primary {
+  background-color: aquamarine;
 }/*# sourceMappingURL=main.css.map */

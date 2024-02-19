@@ -1,0 +1,29 @@
+<div class="entete text-center">
+  <div class="entete-content">
+      <h1 style="color: #9CC5A1;
+      font-weight: bold;">Contactez-nous</h1>
+  </div>
+  <!-- PENSER A CHANGER L'ACTION !!!!-->
+  <div class="container mt-5">
+    <form class="forms" action="traitement.php" method="post">
+                <label for="lastname" class="form-label">Nom:</label>
+                <input type="text" class="form-control" id="LastNameInput" name="lastname">
+
+                <label for="firstname" class="form-label">Prénom:</label>
+                <input type="text" class="form-control" id="FirstNameInput" name="firstname">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="EmailInput" name="email">
+                
+                <label for="subject" class="form-label">Sujet:</label>
+                <input type="text" class="form-control" id="SubjectInput" value="" name="subject" placeholder="Annonce ou Rendez-vous">
+                
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="MessageArea" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnValidation">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+

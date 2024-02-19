@@ -6,9 +6,85 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="scss/main.css">
+  <link rel="shortcut icon" href="#">
   <title>Document</title>
-</head>
-<body>
-  
+    <title>Garage V Parrot</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Garage V Parrot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nos voitures</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Réparation</a></li>
+                  <li><a class="dropdown-item" href="#">Carroserie</a></li>
+                  <li><a class="dropdown-item" href="#">Entretien</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Avis">Vos Avis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Contact">Nous contacter</a>
+              </li>
+              <li class="nav-item" data-show="disconnect">
+                <a class="nav-link" href="/Connexion">Connexion</a>
+              </li>
+              <li class="nav-item" data-show="connect">
+                <button class="nav-link" id="btn-disconnected">Deconnexion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-page">
+      <!-- contenu de la page-->
+    </main>
+    
+    <footer class="bg-dark text-white text-center footer">
+      <div class="footer-top">
+      <div class="footer-col">
+        <h3>Nos horaires</h3>
+        <p>
+          lun : 08-45 - 12:00, 14h00 - 18h00 <br>
+          mar : 08-45 - 12:00, 14h00 - 18h00 <br>
+          mer : 08-45 - 12:00, 14h00 - 18h00 <br>
+          jeu : 08-45 - 12:00, 14h00 - 18h00 <br>
+          ven : 08-45 - 12:00, 14h00 - 18h00 <br>
+          sam : 08-45 - 12:00, fermé <br>
+          dim : fermé 
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Nos Coordonnées</h3>
+        <p>
+          Garageparrot@gmail.com <br>
+          4 rue du capitole 31000 Toulouse <br>
+          05-55-55-55-55 <br>
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <script type="module" src="Router/router.js"></script>
+    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

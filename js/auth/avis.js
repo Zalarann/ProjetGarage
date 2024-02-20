@@ -1,8 +1,9 @@
-const inputNom = document.getElementById("LastNameInput");
-const inputPrenom = document.getElementById("FirstNameInput");
-const inputMail = document.getElementById("EmailInput");
-const inputComment = document.getElementById("CommentArea");
-const selectNote = document.getElementById("NoteSelect");
+inputNom = document.getElementById("LastNameInput");
+inputPrenom = document.getElementById("FirstNameInput");
+inputMail = document.getElementById("EmailInput");
+inputComment = document.getElementById("CommentArea");
+selectNote = document.getElementById("NoteSelect");
+
 
 inputNom.addEventListener("keyup", validateForm); 
 inputPrenom.addEventListener("keyup", validateForm);

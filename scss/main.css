@@ -11977,19 +11977,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-}
-
 main {
-  margin-bottom: 250px;
+  padding-bottom: 250px;
+  background-color: rgba(73, 160, 108, 0.5803921569);
 }
 
 p {
@@ -12009,12 +11999,13 @@ p {
   height: 100%;
   background-image: url(../images/tete_de_page.jpg);
   background-size: cover;
+  filter: brightness(0.3);
 }
 .entete * {
   position: relative;
 }
 .entete .entete-content {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12036,7 +12027,7 @@ article {
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  background-color: #216869;
   overflow: hidden;
 }
 
@@ -12055,7 +12046,6 @@ article {
 
 .service {
   flex: 1;
-  margin-left: 20px;
 }
 
 .service img, .photo img {
@@ -12137,6 +12127,7 @@ filter .button {
   width: 300px;
   margin: 20px;
   text-align: center;
+  background-color: #1f2421;
 }
 .voitures .card img {
   width: 100%;
@@ -12144,6 +12135,7 @@ filter .button {
 }
 .voitures .card-title {
   margin-top: 10px;
+  color: white;
 }
 .voitures .card p {
   margin: 10px 0;
@@ -12165,6 +12157,7 @@ filter .button {
   font-weight: bold;
   font-style: italic;
   margin-bottom: 5px;
+  background-color: wheat;
 }
 @media only screen and (max-width: 768px) {
   .voitures .card .accroche {
@@ -12179,17 +12172,16 @@ filter .button {
 .voitures .type-1 {
   background-color: aquamarine;
 }
-.voitures .container_form {
-  box-sizing: border-box;
-}
 
 form {
   max-width: 400px;
+  width: 100%;
   margin: auto;
 }
 form label {
   display: block;
   margin-bottom: 8px;
+  color: #1f2421;
 }
 form input, form textarea {
   width: 100%;
@@ -12213,4 +12205,15 @@ form button {
 }
 form button:hover {
   background-color: #45a049;
+}
+
+.container_form {
+  display: grid;
+  gap: 20px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #216869;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

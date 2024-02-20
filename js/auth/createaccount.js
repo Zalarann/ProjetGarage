@@ -97,8 +97,9 @@ let requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://127.0.0.1:8000/api/registration", requestOptions)
+fetch("http://postman-echo.com/get?test=123", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 }
+

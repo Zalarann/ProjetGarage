@@ -149,3 +149,33 @@ let modifyButton = document.getElementById("modifyButton_1");
     }
   });
   
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    let minPriceInput = document.getElementById('minPrice');
+    let maxPriceInput = document.getElementById('maxPrice');
+    let products = document.getElementById('products').getElementsByClassName('card');
+  
+    // Ajouter des écouteurs d'événements pour détecter les changements dans les champs de prix
+    minPriceInput.addEventListener('input', filterProducts);
+    maxPriceInput.addEventListener('input', filterProducts);
+  
+    // Fonction pour filtrer les produits en fonction des champs de prix
+    function filterProducts() {
+        let minPrice = parseFloat(minPriceInput.value) || 0;
+        let maxPrice = parseFloat(maxPriceInput.value) || Infinity;
+  
+        // Parcourir tous les produits et les masquer ou les afficher en fonction des prix
+        for (let i = 0; i < products.length; i++) {
+            let productPrice = parseFloat(products[i].getAttribute('data-price'));
+  
+            if (productPrice >= minPrice && productPrice <= maxPrice) {
+                products[i].style.display = 'block';
+            } else {
+                products[i].style.display = 'none';
+            }
+        }
+    }
+  });
+  
+  

@@ -83,7 +83,6 @@ article {
 
 .service {
   flex: 1;
-  margin-left: 20px;
 }
 
 .service img, .photo img {
@@ -214,17 +213,23 @@ filter {
   .type-1 {
     background-color: aquamarine;
 }
-.container_form {
-  box-sizing: border-box;
+.container_form { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 }
 form {
   max-width: 400px;
+  width: 100%; 
   margin: auto;
 
 label {
   display: block;
   margin-bottom: 8px;
+  color: $primary; 
 }
 
 input, textarea {
@@ -253,4 +258,14 @@ button {
 button:hover {
   background-color: #45a049;
 }
+}
+.container_form {
+  display: grid;
+  gap: 20px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  overflow: hidden;
 }

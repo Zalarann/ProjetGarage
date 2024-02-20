@@ -1,10 +1,11 @@
 <div class="entete text-center">
-  <div class="entete-content">
-      <h1 style="color: #9CC5A1;
-      font-weight: bold;">Contactez-nous</h1>
-  </div>
+    <div class="entete-content">
+        <h1 style="color: #9CC5A1;
+        font-weight: bold;">Nous Contacter</h1>
+    </div>
+</div>
   <!-- PENSER A CHANGER L'ACTION !!!!-->
-  <div class="container mt-5">
+  <div class="container_form mt-5">
     <form class="forms" action="traitement.php" method="post">
                 <label for="lastname" class="form-label">Nom:</label>
                 <input type="text" class="form-control" id="LastNameInput" name="lastname">
@@ -16,14 +17,15 @@
                 <input type="email" class="form-control" id="EmailInput" name="email">
                 
                 <label for="subject" class="form-label">Sujet:</label>
-                <input type="text" class="form-control" id="SubjectInput" value="" name="subject" placeholder="Annonce ou Rendez-vous">
+                <input type="text" class="form-control" id="SubjectInput" value="" name="subject">
                 
                 <label for="message" class="form-label">Message:</label>
                 <textarea class="form-control" id="MessageArea" name="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" id="btnValidation">Envoyer</button>
-        </form>
     </div>
-</div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="btnValidation">Envoyer</button>
+            </div>
+    </form>
+
 
 

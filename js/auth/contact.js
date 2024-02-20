@@ -1,25 +1,25 @@
-const inputNom = document.getElementById("LastNameInput");
-const inputPrenom = document.getElementById("FirstNameInput");
-const inputMail = document.getElementById("EmailInput");
-const inputsujet = document.getElementById("SubjectInput");
-const areaMessage = document.getElementById("MessageArea");
+const nameInput = document.getElementById("LastNameInput");
+const prenomInput = document.getElementById("FirstNameInput");
+const mailInput = document.getElementById("EmailInput");
+const sujetInput = document.getElementById("SubjectInput");
+const messageArea = document.getElementById("MessageArea");
 
-inputNom.addEventListener("keyup", validateForm); 
-inputPrenom.addEventListener("keyup", validateForm);
-inputMail.addEventListener("keyup", validateForm);
-inputsujet.addEventListener("keyup", validateForm);
-areaMessage.addEventListener("keyup", validateForm);
+nameInput.addEventListener("keyup", validateForm); 
+prenomInput.addEventListener("keyup", validateForm);
+mailInput.addEventListener("keyup", validateForm);
+sujetInput.addEventListener("keyup", validateForm);
+messageArea.addEventListener("keyup", validateForm);
 
 
 
 function validateForm(){
-    const nomOK = validateRequired(inputNom);
-    const prenomOK = validateRequired(inputPrenom);
-    const sujetOk = validateRequired(inputsujet)
-    const areaMessageOK = validateTextarea(areaMessage,255)
-    const emailOK = validateEMail(inputMail)
+    const nomOK = validateRequired(nameInput);
+    const prenomOK = validateRequired(prenomInput);
+    const sujetOk = validateRequired(sujetInput)
+    const messageAreaOK = validateTextarea(messageArea,255)
+    const emailOK = validateEMail(mailInput)
 
-    if(nomOK && prenomOK && sujetOk && areaMessageOK && emailOK){
+    if(nomOK && prenomOK && sujetOk && messageAreaOK && emailOK){
         btnValidation.disabled = false;
     }
     else{
@@ -70,3 +70,8 @@ function validateTextarea(textarea, maxLength) {
 
 const textareaElement = document.getElementById("MessageArea");
 validateTextarea(textareaElement, 255);
+
+
+
+
+

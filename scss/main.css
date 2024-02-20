@@ -12055,7 +12055,6 @@ article {
 
 .service {
   flex: 1;
-  margin-left: 20px;
 }
 
 .service img, .photo img {
@@ -12180,16 +12179,22 @@ filter .button {
   background-color: aquamarine;
 }
 .voitures .container_form {
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 form {
   max-width: 400px;
+  width: 100%;
   margin: auto;
 }
 form label {
   display: block;
   margin-bottom: 8px;
+  color: #49A078;
 }
 form input, form textarea {
   width: 100%;
@@ -12213,4 +12218,15 @@ form button {
 }
 form button:hover {
   background-color: #45a049;
+}
+
+.container_form {
+  display: grid;
+  gap: 20px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
